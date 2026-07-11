@@ -1,7 +1,15 @@
 h1 {
     font-size: 32px;
-    margin: 0;
+    margin: 32px 0 0 0;
     font-family: "Yomogi", cursive;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 32px 0 0 0;
+    font-family: "Yomogi", cursive;
+    font-weight: 600;
 }
 
 p {

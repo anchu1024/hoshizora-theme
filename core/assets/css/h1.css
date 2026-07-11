@@ -2,13 +2,13 @@
     position: relative;
     display: block;
     width: 100%;
-    height: auto;
+    aspect-ratio: 4660 / 104;
     margin: 0;
     margin-bottom: calc(100vw * 0.1);
-}
-
-.h1-line-img {
-    width: 100%;
+    background-image: url("../img/pc/h1-line.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 .h1-line::after,
