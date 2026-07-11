@@ -1,0 +1,103 @@
+.star-table {
+    overflow: visible;
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin: 32px;
+}
+
+.corner-star {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/pc/table-corner-star.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+/* 左上 */
+.corner-star[pos="top left"] {
+    top: -16px;
+    left: -16px;
+}
+
+/* 右上 */
+.corner-star[pos="top right"] {
+    top: -16px;
+    right: -16px;
+}
+
+/* 右下 */
+.corner-star[pos="bottom right"] {
+    bottom: -16px;
+    right: -16px;
+}
+
+/* 左下 */
+.corner-star[pos="bottom left"] {
+    bottom: -16px;
+    left: -16px;
+}
+
+.star-table table {
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* 外枠の線（独立要素） */
+.border-top,
+.border-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background-image: url("../img/pc/table-horizontal-line.webp");
+    background-repeat: repeat-x;
+    background-size: auto 12px;
+    pointer-events: none;
+}
+
+.border-top {
+    top: -6px;
+}
+.border-bottom {
+    bottom: -6px;
+}
+
+.border-left,
+.border-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 12px;
+    background-image: url("../img/pc/table-vertical-line.webp");
+    background-repeat: repeat-y;
+    background-size: 12px auto;
+    pointer-events: none;
+}
+
+.border-left {
+    left: -6px;
+}
+.border-right {
+    right: -6px;
+}
+
+/* 内側の罫線：同色の点線 */
+.star-table th,
+.star-table td {
+    padding: 12px 16px;
+    font-family: "Kosugi Maru", sans-serif;
+    font-size: 16px;
+
+    border-bottom: 3px dotted rgba(255, 255, 200, 0.7);
+    border-right: 3px dotted rgba(255, 255, 200, 0.7);
+}
+
+/* 一番右の列は右線を消す */
+.star-table th:last-child,
+.star-table td:last-child {
+    border-right: none;
+}
