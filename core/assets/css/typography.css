@@ -1,0 +1,12 @@
+h1 {
+    font-size: 32px;
+    margin: 0;
+    font-family: "Yomogi", cursive;
+}
+
+p {
+    font-size: 17px;
+    font-family: "Kosugi Maru", sans-serif;
+    line-height: 1.8;
+    padding: 0 18px;
+}

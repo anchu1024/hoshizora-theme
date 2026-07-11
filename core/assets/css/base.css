@@ -1,0 +1,14 @@
+body {
+    background-image: url("../img/pc/background.webp");
+    background-size: cover; /* 画面全体を埋める */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返さない */
+    background-attachment: fixed; /* スクロールしても固定（任意） */
+    color: #edead9;
+
+    font-size: 17px;
+    font-family: "Kosugi Maru", sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    font-style: normal;
+}
