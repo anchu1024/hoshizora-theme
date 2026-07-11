@@ -5,6 +5,23 @@ a {
     color: #efb050;
 }
 
+a[target="_blank"] {
+    position: relative;
+    padding-right: 18px; /* アイコン分の余白 */
+}
+
+a[target="_blank"] {
+    /* アイコンを右側に描画する */
+    --ext-icon: url("../img/pc/external.webp");
+}
+
+a[target="_blank"] {
+    background-image: var(--ext-icon);
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: right center;
+}
+
 /* 下線1 */
 a::after,
 a::before {
