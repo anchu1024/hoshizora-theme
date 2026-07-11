@@ -1,0 +1,24 @@
+.image {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 616 / 584;
+    background-image: url("../img/pc/img-deco.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.image img {
+    border-radius: 5px;
+}
