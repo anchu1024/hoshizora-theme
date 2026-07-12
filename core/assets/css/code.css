@@ -17,6 +17,7 @@ pre[class*="language-"] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
+    margin: 0;
 }
 pre[class*="language-"] {
     padding: 1em;
@@ -27,6 +28,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
     background: #0e0c1b;
     border-radius: 10px;
+    margin: 15px;
 }
 :not(pre) > code[class*="language-"] {
     padding: 0.1em;

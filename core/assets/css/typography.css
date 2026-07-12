@@ -12,6 +12,17 @@ h2 {
     font-weight: 600;
 }
 
+header,
+footer,
+header *,
+footer * {
+    font-family: "Yomogi", cursive;
+}
+
+footer p {
+    font-family: "Yomogi", cursive;
+}
+
 p {
     font-size: 17px;
     font-family: "Kosugi Maru", sans-serif;

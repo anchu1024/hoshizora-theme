@@ -16,6 +16,9 @@
 
     <link rel="stylesheet" href="./core/assets/css/base.css" />
     <link rel="stylesheet" href="./core/assets/css/typography.css" />
+    <link rel="stylesheet" href="./core/assets/css/header.css" />
+    <link rel="stylesheet" href="./core/assets/css/nav.css" />
+    <link rel="stylesheet" href="./core/assets/css/footer.css" />
     <link rel="stylesheet" href="./core/assets/css/h1.css" />
     <link rel="stylesheet" href="./core/assets/css/h2.css" />
     <link rel="stylesheet" href="./core/assets/css/link.css" />
@@ -24,8 +27,26 @@
     <link rel="stylesheet" href="./core/assets/css/table.css" />
     <link rel="stylesheet" href="./core/assets/css/hr.css" />
     <link rel="stylesheet" href="./core/assets/css/img.css" />
+    <link rel="stylesheet" href="./core/assets/css/button.css" />
 </head>
 <body>
+    <header>
+        <div style="font-size: 40px">Hello World!</div>
+        <nav class="star-nav">
+            <div class="nav-bar">
+                <div class="nav-star left"></div>
+                <div class="nav-line"></div>
+                <div class="nav-star right"></div>
+            </div>
+
+            <div class="nav-strings">
+                <div class="nav-item"><a>Home</a></div>
+                <div class="nav-item"><a>About</a></div>
+                <div class="nav-item"><a>Blog</a></div>
+                <div class="nav-item"><a>Contact</a></div>
+            </div>
+        </nav>
+    </header>
     <h1>Hello World!あいうえお</h1>
     <div class="h1-line"></div>
     <p>
@@ -40,6 +61,18 @@
         1]、史上最も売れた音楽家の1人である[15]。
         ロックの殿堂にはジャクソン5とソロ名義の2回にわたり顕彰されている[16][17]。「人類史上最も成功したエンターテイナー」としてギネス世界記録に認定されており[18]、13のグラミー賞（ノミネートは38回）をはじめ、世界各国の数多くの賞を受賞している[19]。
     </p>
+    <button class="star-button">
+        <span class="button-content">Click Me!</span>
+        <span class="corner-star top-left"></span>
+        <span class="corner-star top-right"></span>
+        <span class="corner-star bottom-left"></span>
+        <span class="corner-star bottom-right"></span>
+        <span class="border-top"></span>
+        <span class="border-left"></span>
+        <span class="border-bottom"></span>
+        <span class="border-right"></span>
+    </button>
+
     <ul class="star-list">
         <li>el1</li>
         <li>
@@ -119,7 +152,14 @@ int main () {
     while (true) {}
 }
     </code></pre>
+    <h3>りんごの画像</h3>
     <div class="image">
         <img src="./design/images/apple-example.jpe" />
+        りんご
     </div>
+    <footer>
+        <div>My Example Site</div>
+        <p>&copy; 2026 anchuyu</p>
+        This site was made by <a>Hoshizora</a>.
+    </footer>
 </body>
