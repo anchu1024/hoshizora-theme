@@ -14,3 +14,58 @@
     top: -15px;
     right: -15px;
 }
+
+.badge-update {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/pc/update-icon.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.badge-hot {
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/pc/meteo.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+
+    position: absolute;
+    top: -30px;
+    right: -30px;
+}
+
+.badge-category {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0px 15px;
+    border-radius: 9999px;
+    margin: 3px;
+}
+
+.badge-category.pink {
+    background: #ff6753;
+    color: #edead9;
+}
+
+.badge-category.yellow {
+    background: #e8b23c;
+    color: #edead9;
+}
+
+.badge-category.turquoise {
+    background: #6cf0d1;
+    color: #3a298b;
+}
+
+.badge-category.purple {
+    background: #f786ff;
+    color: #edead9;
+}

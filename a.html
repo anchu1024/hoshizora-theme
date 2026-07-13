@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./core/assets/css/img.css" />
     <link rel="stylesheet" href="./core/assets/css/button.css" />
     <link rel="stylesheet" href="./core/assets/css/card.css" />
-    <link rel="stylesheet" href="./core/assets/css/info-card.css" />
+    <link rel="stylesheet" href="./core/assets/css/alert.css" />
     <link rel="stylesheet" href="./core/assets/css/badge.css" />
 </head>
 <body>
@@ -64,8 +64,32 @@
         1]、史上最も売れた音楽家の1人である[15]。
         ロックの殿堂にはジャクソン5とソロ名義の2回にわたり顕彰されている[16][17]。「人類史上最も成功したエンターテイナー」としてギネス世界記録に認定されており[18]、13のグラミー賞（ノミネートは38回）をはじめ、世界各国の数多くの賞を受賞している[19]。
     </p>
-    <div class="info-card">
+    <div class="alert-card info-card">
         <div class="card-content">情報例</div>
+        <span class="border-top"></span>
+        <span class="border-left"></span>
+        <span class="border-bottom"></span>
+        <span class="border-right"></span>
+    </div>
+
+    <div class="alert-card warn-card">
+        <div class="card-content">注意すべき情報</div>
+        <span class="border-top"></span>
+        <span class="border-left"></span>
+        <span class="border-bottom"></span>
+        <span class="border-right"></span>
+    </div>
+
+    <div class="alert-card danger-card">
+        <div class="card-content">警告!!!</div>
+        <span class="border-top"></span>
+        <span class="border-left"></span>
+        <span class="border-bottom"></span>
+        <span class="border-right"></span>
+    </div>
+
+    <div class="alert-card success-card">
+        <div class="card-content">XXXとの通信に成功しました</div>
         <span class="border-top"></span>
         <span class="border-left"></span>
         <span class="border-bottom"></span>
@@ -150,7 +174,10 @@
         </table>
     </div>
     <div class="basic-card">
-        <div class="badge badge-new"></div>
+        <div class="badge badge-category pink">Category</div>
+        <div class="badge badge-category yellow">Category</div>
+        <div class="badge badge-category turquoise">Category</div>
+        <div class="badge badge-category purple">Category</div>
         <div class="card-content">
             <img src="./design/images/apple-example.jpe" alt="preview" />
             <p>これはカードのプレビューです。</p>

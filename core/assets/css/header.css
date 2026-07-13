@@ -7,7 +7,7 @@ header {
     padding: 10px;
     background: #0e0c1bee;
     margin: 0;
-    z-index: 100;
+    z-index: 10000;
     overflow: hidden;
     box-sizing: border-box;
     display: flex;
