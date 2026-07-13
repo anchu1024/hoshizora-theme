@@ -7,7 +7,7 @@
     margin: 32px;
 }
 
-.corner-star {
+.star-table > .corner-star {
     position: absolute;
     width: 32px;
     height: 32px;
@@ -18,25 +18,25 @@
 }
 
 /* 左上 */
-.corner-star[pos="top left"] {
+.star-table > .corner-star[pos="top left"] {
     top: -16px;
     left: -16px;
 }
 
 /* 右上 */
-.corner-star[pos="top right"] {
+.star-table > .corner-star[pos="top right"] {
     top: -16px;
     right: -16px;
 }
 
 /* 右下 */
-.corner-star[pos="bottom right"] {
+.star-table > .corner-star[pos="bottom right"] {
     bottom: -16px;
     right: -16px;
 }
 
 /* 左下 */
-.corner-star[pos="bottom left"] {
+.star-table > .corner-star[pos="bottom left"] {
     bottom: -16px;
     left: -16px;
 }
@@ -47,8 +47,8 @@
 }
 
 /* 外枠の線（独立要素） */
-.border-top,
-.border-bottom {
+.star-table > .border-top,
+.star-table > .border-bottom {
     position: absolute;
     left: 0;
     right: 0;
@@ -59,15 +59,15 @@
     pointer-events: none;
 }
 
-.border-top {
+.star-table > .border-top {
     top: -6px;
 }
-.border-bottom {
+.star-table > .border-bottom {
     bottom: -6px;
 }
 
-.border-left,
-.border-right {
+.star-table > .border-left,
+.star-table > .border-right {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -78,10 +78,10 @@
     pointer-events: none;
 }
 
-.border-left {
+.star-table > .border-left {
     left: -6px;
 }
-.border-right {
+.star-table > .border-right {
     right: -6px;
 }
 

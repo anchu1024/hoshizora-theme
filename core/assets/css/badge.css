@@ -1,0 +1,16 @@
+.badge {
+    z-index: 1000;
+}
+
+.badge-new {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/pc/new.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
