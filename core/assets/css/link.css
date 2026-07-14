@@ -95,7 +95,10 @@ a:hover::before {
 
 footer a,
 footer a::before,
-footer a::after {
+footer a::after,
+.pagination a,
+.pagination a::before,
+.pagination a::after {
     all: unset;
     /* 必要なら再定義 */
     color: inherit;
