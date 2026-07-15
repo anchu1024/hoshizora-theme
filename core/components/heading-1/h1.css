@@ -1,0 +1,67 @@
+h1 {
+    margin: 32px 0 0 5px;
+}
+
+.h1-line {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4660 / 104;
+    margin: 0;
+    margin-bottom: calc(100vw * 0.1);
+    background-image: url("../img/pc/h1-line.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.h1-line::after,
+.h1-line::before {
+    content: "";
+    position: absolute;
+    left: 2%; /* 横線の左から1割の位置 */
+    top: 32%; /* 横線の中心位置 */
+
+    width: calc(100vw * 0.1); /* star-deco の幅（必要に応じて調整） */
+    height: calc(100vw * 0.1); /* star-deco の高さ（必要に応じて調整） */
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.h1-line::after {
+    background-image: url("../img/pc/star-deco.webp");
+    animation: star1 1.2s steps(1) infinite;
+}
+
+.h1-line::before {
+    background-image: url("../img/pc/star-deco2.webp");
+    animation: star2 1.2s steps(1) infinite;
+}
+
+/* 星1 → ON → OFF */
+@keyframes star1 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 星2 → OFF → ON */
+@keyframes star2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

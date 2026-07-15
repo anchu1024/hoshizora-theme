@@ -1,0 +1,45 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 6px 0;
+    padding: 0;
+}
+
+.pagination > ul {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination li.prev,
+.pagination li.next {
+    display: inline-block;
+    aspect-ratio: 994 / 952;
+    min-height: 20px;
+    height: 80%;
+    margin: 0 10px;
+    padding: 0;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: filter 0.3s ease;
+}
+
+.pagination li.next {
+    background-image: url("../img/pc/next-star.webp");
+}
+.pagination li.prev {
+    background-image: url("../img/pc/prev-star.webp");
+}
+
+.pagination li.prev:hover,
+.pagination li.next:hover {
+    filter: drop-shadow(0 0 6px #fffa);
+}

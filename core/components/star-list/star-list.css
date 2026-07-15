@@ -1,0 +1,57 @@
+.star-list,
+.star-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 18px;
+}
+
+.star-list li {
+    position: relative;
+    padding-left: 32px; /* 星の幅分の余白 */
+    min-height: 48px;
+}
+
+.star-list li:last-child {
+    position: relative;
+    padding-left: 32px; /* 星の幅分の余白 */
+    min-height: 10px;
+}
+
+/* 階層1 → 星1 */
+.star-list > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/pc/list-dot1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 階層2 → 星2 */
+.star-list ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/pc/list-dot2.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* rope（縦ライン） */
+.star-list li:not(:last-child):after {
+    content: "";
+    position: absolute;
+    left: 13px; /* 星の中心に合わせる */
+    top: 28px; /* 星の下から rope を開始 */
+    width: 2px;
+    height: calc(100% - 28px);
+    background-image: url("../img/pc/list-rope.webp");
+    background-repeat: repeat-y;
+    background-size: contain;
+}

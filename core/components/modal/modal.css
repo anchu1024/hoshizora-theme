@@ -1,0 +1,125 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #0005;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/pc/modal-background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.modal > .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background: #000c;
+}
+
+.modal > .header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    border-radius: 9999px;
+    background: #d5b077;
+    margin: 0;
+    padding: 0;
+}
+
+.modal .title {
+    margin: 0px 10px;
+    color: white;
+}
+
+.modal .close-btn {
+    position: absolute;
+    appearance: none;
+    top: 0;
+    right: 0;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: transparent;
+    background-image: url("../img/pc/close-btn.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal .content {
+    width: 100%;
+    height: calc(100% - 40px);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* 横線 */
+.modal > .border-top,
+.modal > .border-bottom {
+    position: absolute;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: 15px;
+    background: url("../img/pc/nav-horizontal-line.webp") repeat-x;
+    background-size: auto 15px;
+}
+
+.modal > .border-top {
+    top: -8px;
+}
+
+.modal > .border-bottom {
+    bottom: -8px;
+}
+
+/* 縦線 */
+.modal > .border-left,
+.modal > .border-right {
+    position: absolute;
+    top: -4px;
+    width: 15px;
+    height: calc(100% + 8px);
+    background: url("../img/pc/nav-vertical-line.webp") repeat-y;
+    background-size: 15px auto;
+}
+
+.modal > .border-left {
+    left: -8px;
+}
+
+.modal > .border-right {
+    right: -8px;
+}
