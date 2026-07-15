@@ -28,7 +28,7 @@
     left: -4px;
     width: calc(100% + 8px);
     height: 15px;
-    background: url("../img/pc/nav-horizontal-line.webp") repeat-x;
+    background: url("../../assets/img/pc/nav-horizontal-line.webp") repeat-x;
     background-size: auto 15px;
 }
 
@@ -47,7 +47,7 @@
     top: -4px;
     width: 15px;
     height: calc(100% + 8px);
-    background: url("../img/pc/nav-vertical-line.webp") repeat-y;
+    background: url("../../assets/img/pc/nav-vertical-line.webp") repeat-y;
     background-size: 15px auto;
 }
 
@@ -67,7 +67,7 @@
     width: 80px; /* star-deco の幅（必要に応じて調整） */
     height: 80px; /* star-deco の高さ（必要に応じて調整） */
 
-    background-image: url("../img/pc/star-deco.webp");
+    background-image: url("../../assets/img/pc/star-deco.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;

@@ -33,10 +33,10 @@
 }
 
 .pagination li.next {
-    background-image: url("../img/pc/next-star.webp");
+    background-image: url("../../assets/img/pc/next-star.webp");
 }
 .pagination li.prev {
-    background-image: url("../img/pc/prev-star.webp");
+    background-image: url("../../assets/img/pc/prev-star.webp");
 }
 
 .pagination li.prev:hover,

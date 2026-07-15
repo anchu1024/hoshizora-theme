@@ -17,7 +17,7 @@ blockquote::before {
     top: 0;
     width: 6px;
     height: 100%;
-    background-image: url("../img/pc/quote-line.webp"); /* 手描き縦線素材 */
+    background-image: url("../../assets/img/pc/quote-line.webp"); /* 手描き縦線素材 */
     background-size: contain;
     background-repeat: repeat-y;
     animation: quote-wiggle 1.2s ease-in-out infinite;

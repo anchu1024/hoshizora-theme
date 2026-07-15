@@ -18,7 +18,7 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/pc/h2-line.webp");
+    background-image: url("../../assets/img/pc/h2-line.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -34,7 +34,7 @@ h2 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/pc/h2-line2.webp");
+    background-image: url("../../assets/img/pc/h2-line2.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;

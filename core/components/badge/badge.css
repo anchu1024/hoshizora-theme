@@ -5,7 +5,7 @@
 .badge-new {
     width: 30px;
     height: 30px;
-    background-image: url("../img/pc/new.webp");
+    background-image: url("../../assets/img/pc/new.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -18,7 +18,7 @@
 .badge-update {
     width: 30px;
     height: 30px;
-    background-image: url("../img/pc/update-icon.webp");
+    background-image: url("../../assets/img/pc/update-icon.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -31,7 +31,7 @@
 .badge-hot {
     width: 60px;
     height: 60px;
-    background-image: url("../img/pc/meteo.webp");
+    background-image: url("../../assets/img/pc/meteo.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;

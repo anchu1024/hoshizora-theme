@@ -11,7 +11,7 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    background-image: url("../img/pc/table-corner-star.webp");
+    background-image: url("../../assets/img/pc/table-corner-star.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -53,7 +53,7 @@
     left: 0;
     right: 0;
     height: 12px;
-    background-image: url("../img/pc/table-horizontal-line.webp");
+    background-image: url("../../assets/img/pc/table-horizontal-line.webp");
     background-repeat: repeat-x;
     background-size: auto 12px;
     pointer-events: none;
@@ -72,7 +72,7 @@
     top: 0;
     bottom: 0;
     width: 12px;
-    background-image: url("../img/pc/table-vertical-line.webp");
+    background-image: url("../../assets/img/pc/table-vertical-line.webp");
     background-repeat: repeat-y;
     background-size: 12px auto;
     pointer-events: none;

@@ -9,7 +9,7 @@ h1 {
     aspect-ratio: 4660 / 104;
     margin: 0;
     margin-bottom: calc(100vw * 0.1);
-    background-image: url("../img/pc/h1-line.webp");
+    background-image: url("../../assets/img/pc/h1-line.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -31,12 +31,12 @@ h1 {
 }
 
 .h1-line::after {
-    background-image: url("../img/pc/star-deco.webp");
+    background-image: url("../../assets/img/pc/star-deco.webp");
     animation: star1 1.2s steps(1) infinite;
 }
 
 .h1-line::before {
-    background-image: url("../img/pc/star-deco2.webp");
+    background-image: url("../../assets/img/pc/star-deco2.webp");
     animation: star2 1.2s steps(1) infinite;
 }
 

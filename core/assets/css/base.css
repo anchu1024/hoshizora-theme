@@ -1,5 +1,5 @@
 body {
-    background-image: url("../img/pc/background.webp");
+    background-image: url("../../assets/img/pc/background.webp");
     background-size: cover; /* 画面全体を埋める */
     background-position: center; /* 中央に配置 */
     background-repeat: no-repeat; /* 繰り返さない */

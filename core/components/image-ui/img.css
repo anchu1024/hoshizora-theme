@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     aspect-ratio: 616 / 584;
-    background-image: url("../img/pc/img-deco.webp");
+    background-image: url("../../assets/img/pc/img-deco.webp");
     background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;

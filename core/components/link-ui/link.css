@@ -16,7 +16,7 @@ a[target="_blank"] {
 
 a[target="_blank"] {
     /* アイコンを右側に描画する */
-    --ext-icon: url("../img/pc/external.webp");
+    --ext-icon: url("../../assets/img/pc/external.webp");
 }
 
 a[target="_blank"] {
@@ -41,21 +41,21 @@ a::before {
 
 /* 通常時は underline.webp */
 a::after {
-    background-image: url("../img/pc/underline.webp");
+    background-image: url("../../assets/img/pc/underline.webp");
 }
 
 nav a::after {
-    background-image: url("../img/pc/nav-link-underline.webp");
+    background-image: url("../../assets/img/pc/nav-link-underline.webp");
 }
 
 /* 切り替え用の underline2.webp */
 a::before {
-    background-image: url("../img/pc/underline2.webp");
+    background-image: url("../../assets/img/pc/underline2.webp");
     visibility: hidden; /* 初期は非表示 */
 }
 
 nav a::before {
-    background-image: url("../img/pc/nav-link-underline2.webp");
+    background-image: url("../../assets/img/pc/nav-link-underline2.webp");
     visibility: hidden; /* 初期は非表示 */
 }
 

@@ -25,7 +25,7 @@
     top: 0;
     width: 28px;
     height: 28px;
-    background-image: url("../img/pc/list-dot1.webp");
+    background-image: url("../../assets/img/pc/list-dot1.webp");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -38,7 +38,7 @@
     top: 0;
     width: 28px;
     height: 28px;
-    background-image: url("../img/pc/list-dot2.webp");
+    background-image: url("../../assets/img/pc/list-dot2.webp");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -51,7 +51,7 @@
     top: 28px; /* 星の下から rope を開始 */
     width: 2px;
     height: calc(100% - 28px);
-    background-image: url("../img/pc/list-rope.webp");
+    background-image: url("../../assets/img/pc/list-rope.webp");
     background-repeat: repeat-y;
     background-size: contain;
 }

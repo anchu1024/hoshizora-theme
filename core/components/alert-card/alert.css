@@ -54,12 +54,12 @@
 
 .info-card > .border-top,
 .info-card > .border-bottom {
-    background-image: url("../img/pc/info-card-horizontal-line.webp");
+    background-image: url("../../assets/img/pc/info-card-horizontal-line.webp");
 }
 
 .info-card > .border-left,
 .info-card > .border-right {
-    background-image: url("../img/pc/info-card-vertical-line.webp");
+    background-image: url("../../assets/img/pc/info-card-vertical-line.webp");
 }
 
 /* warn card */
@@ -70,12 +70,12 @@
 
 .warn-card > .border-top,
 .warn-card > .border-bottom {
-    background-image: url("../img/pc/warning-horizontal-line.webp");
+    background-image: url("../../assets/img/pc/warning-horizontal-line.webp");
 }
 
 .warn-card > .border-left,
 .warn-card > .border-right {
-    background-image: url("../img/pc/warning-vertical-line.webp");
+    background-image: url("../../assets/img/pc/warning-vertical-line.webp");
 }
 
 /* danger card */
@@ -86,12 +86,12 @@
 
 .danger-card > .border-top,
 .danger-card > .border-bottom {
-    background-image: url("../img/pc/danger-horizontal-line.webp");
+    background-image: url("../../assets/img/pc/danger-horizontal-line.webp");
 }
 
 .danger-card > .border-left,
 .danger-card > .border-right {
-    background-image: url("../img/pc/danger-vertical-line.webp");
+    background-image: url("../../assets/img/pc/danger-vertical-line.webp");
 }
 
 /* success card */
@@ -102,10 +102,10 @@
 
 .success-card > .border-top,
 .success-card > .border-bottom {
-    background-image: url("../img/pc/success-horizontal-line.webp");
+    background-image: url("../../assets/img/pc/success-horizontal-line.webp");
 }
 
 .success-card > .border-left,
 .success-card > .border-right {
-    background-image: url("../img/pc/success-vertical-line.webp");
+    background-image: url("../../assets/img/pc/success-vertical-line.webp");
 }
