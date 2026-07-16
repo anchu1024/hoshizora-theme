@@ -19,6 +19,8 @@
         defer
     ></script>
     <script src="./core/components/code/prism-init.js" defer></script>
+
+    <script src="./core/components/toast/toast.js" async></script>
 </head>
 <body>
     <header>
@@ -244,5 +246,13 @@ int main () {
             <span class="border-bottom"></span>
             <span class="border-right"></span>
         </div>
+    </div>
+
+    <div class="toast info">
+        <div class="content">{{ slot }}</div>
+        <span class="border-top"></span>
+        <span class="border-left"></span>
+        <span class="border-bottom"></span>
+        <span class="border-right"></span>
     </div>
 </body>

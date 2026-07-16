@@ -1,0 +1,118 @@
+.toast {
+    position: fixed;
+    display: inline-block;
+    width: auto;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0;
+    left: -100px;
+    opacity: 0;
+    transition:
+        bottom 0.2s ease,
+        left 0.2s ease,
+        opacity 0.2s ease,
+        transform 0.2s ease;
+    z-index: 90000;
+    background-image: url("../../assets/img/pc/modal-background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 横線 */
+.toast > .border-top,
+.toast > .border-bottom {
+    position: absolute;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: 15px;
+    background-repeat: repeat-x;
+    background-size: auto 15px;
+}
+
+.toast > .border-top {
+    top: -8px;
+}
+
+.toast > .border-bottom {
+    bottom: -8px;
+}
+
+/* 縦線 */
+.toast > .border-left,
+.toast > .border-right {
+    position: absolute;
+    top: -4px;
+    width: 15px;
+    height: calc(100% + 8px);
+    background-repeat: repeat-y;
+    background-size: 15px auto;
+}
+
+.toast > .border-left {
+    left: -8px;
+}
+
+.toast > .border-right {
+    right: -8px;
+}
+
+/* info */
+.info {
+    color: #8be7ec;
+}
+
+.info > .border-top,
+.info > .border-bottom {
+    background-image: url("../../assets/img/pc/info-card-horizontal-line.webp");
+}
+
+.info > .border-left,
+.info > .border-right {
+    background-image: url("../../assets/img/pc/info-card-vertical-line.webp");
+}
+
+/* warn */
+.warn {
+    color: #efc053;
+}
+
+.warn > .border-top,
+.warn > .border-bottom {
+    background-image: url("../../assets/img/pc/warning-horizontal-line.webp");
+}
+
+.warn > .border-left,
+.warn > .border-right {
+    background-image: url("../../assets/img/pc/warning-vertical-line.webp");
+}
+
+/* danger */
+.danger {
+    color: #ff6753;
+}
+
+.danger > .border-top,
+.danger > .border-bottom {
+    background-image: url("../../assets/img/pc/danger-horizontal-line.webp");
+}
+
+.danger > .border-left,
+.danger > .border-right {
+    background-image: url("../../assets/img/pc/danger-vertical-line.webp");
+}
+
+/* success */
+.success {
+    color: #7bff53;
+}
+
+.success > .border-top,
+.success > .border-bottom {
+    background-image: url("../../assets/img/pc/success-horizontal-line.webp");
+}
+
+.success > .border-left,
+.success > .border-right {
+    background-image: url("../../assets/img/pc/success-vertical-line.webp");
+}
