@@ -30,3 +30,8 @@ p {
     line-height: 1.8;
     padding: 0 18px;
 }
+
+.badge-category {
+    font-family: "Yomogi", cursive;
+    font-weight: 600;
+}
