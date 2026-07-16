@@ -19,6 +19,10 @@
     background-repeat: no-repeat;
 }
 
+.toast * {
+    font-family: inherit;
+}
+
 /* 横線 */
 .toast > .border-top,
 .toast > .border-bottom {

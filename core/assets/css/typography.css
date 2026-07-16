@@ -15,7 +15,8 @@ h2 {
 header,
 footer,
 header *,
-footer * {
+footer *,
+.toast {
     font-family: "Yomogi", cursive;
 }
 
