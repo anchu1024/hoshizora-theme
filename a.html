@@ -21,6 +21,7 @@
     <script src="./core/components/code/prism-init.js" defer></script>
 
     <script src="./core/components/toast/toast.js" async></script>
+    <script src="./core/components/dropdown/dropdown.js" async></script>
 </head>
 <body>
     <header>
@@ -163,6 +164,52 @@
             </tbody>
         </table>
     </div>
+    <div class="dropdown">
+        <button class="dropdown-toggle">
+            <span class="content">選択してください</span>
+            <span class="border-top"></span>
+            <span class="border-left"></span>
+            <span class="border-bottom"></span>
+            <span class="border-right"></span>
+        </button>
+
+        <div class="dropdown-menu">
+            <div class="dropdown-item" data-value="a">選択肢 A</div>
+            <div class="dropdown-item" data-value="b">選択肢 B</div>
+            <div class="dropdown-item" data-value="c">選択肢 C</div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropdown-toggle">
+            <span class="content">選択してください</span>
+            <span class="border-top"></span>
+            <span class="border-left"></span>
+            <span class="border-bottom"></span>
+            <span class="border-right"></span>
+        </button>
+
+        <div class="dropdown-menu">
+            <div class="dropdown-item" data-value="a">選択肢 A</div>
+            <div class="dropdown-item" data-value="b">選択肢 B</div>
+            <div class="dropdown-item" data-value="c">選択肢 C</div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropdown-toggle">
+            <span class="content">選択してください</span>
+            <span class="border-top"></span>
+            <span class="border-left"></span>
+            <span class="border-bottom"></span>
+            <span class="border-right"></span>
+        </button>
+
+        <div class="dropdown-menu">
+            <div class="dropdown-item" data-value="a">選択肢 A</div>
+            <div class="dropdown-item" data-value="b">選択肢 B</div>
+            <div class="dropdown-item" data-value="c">選択肢 C</div>
+        </div>
+    </div>
+
     <div class="basic-card">
         <div class="badge badge-category pink">Category</div>
         <div class="badge badge-category yellow">Category</div>
@@ -246,13 +293,5 @@ int main () {
             <span class="border-bottom"></span>
             <span class="border-right"></span>
         </div>
-    </div>
-
-    <div class="toast info">
-        <div class="content">{{ slot }}</div>
-        <span class="border-top"></span>
-        <span class="border-left"></span>
-        <span class="border-bottom"></span>
-        <span class="border-right"></span>
     </div>
 </body>
