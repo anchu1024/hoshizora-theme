@@ -6,6 +6,8 @@ input[type="text"] {
     padding: 10px 12px;
     font-size: 16px;
     transition: box-shadow 0.25s ease;
+    font-family: "Yomogi", cursive;
+    font-weight: 600;
 }
 
 input[type="text"]:focus {

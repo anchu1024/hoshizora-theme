@@ -1,0 +1,32 @@
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* checkbox を透明にする（当たり判定は残す） */
+.checkbox input {
+    opacity: 0;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+}
+
+/* 画像部分 */
+.checkbox .icon {
+    width: 22px;
+    height: 22px;
+    background-image: url("../../assets/img/pc/checkbox-not-checked.webp");
+    background-size: cover;
+    transition: filter 0.2s ease;
+}
+
+/* チェック時に画像を切り替える */
+.checkbox input:checked + .icon {
+    background-image: url("../../assets/img/pc/checkbox-checked.webp");
+}
+
+/* フォーカス時に金色の光を出す */
+.checkbox input:focus + .icon {
+    filter: drop-shadow(0 0 6px #efc053);
+}
