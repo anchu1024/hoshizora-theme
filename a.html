@@ -217,6 +217,47 @@
         <label for="hello">Hello</label>
     </div>
 
+    <form>
+        <fieldset>
+            <legend>希望する連絡方法を選択してください。</legend>
+            <div>
+                <label class="radio">
+                    <input type="radio" id="contactChoice1" name="contact" value="email" />
+                    <span class="icon"></span>
+                </label>
+
+                <label for="contactChoice1">メール</label>
+
+                <label class="radio">
+                    <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                    <span class="icon"></span>
+                </label>
+
+                <label for="contactChoice2">電話</label>
+
+                <label class="radio">
+                    <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                    <span class="icon"></span>
+                </label>
+
+                <label for="contactChoice3">郵便</label>
+            </div>
+            <div>
+                <button class="star-button" type="submit">
+                    <span class="button-content">送信</span>
+                    <span class="corner-star top-left"></span>
+                    <span class="corner-star top-right"></span>
+                    <span class="corner-star bottom-left"></span>
+                    <span class="corner-star bottom-right"></span>
+                    <span class="border-top"></span>
+                    <span class="border-left"></span>
+                    <span class="border-bottom"></span>
+                    <span class="border-right"></span>
+                </button>
+            </div>
+        </fieldset>
+    </form>
+
     <input type="text" />
     <div class="basic-card">
         <div class="badge badge-category pink">Category</div>

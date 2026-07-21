@@ -1,0 +1,32 @@
+.radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* radio を透明にする（当たり判定は残す） */
+.radio input {
+    opacity: 0;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+}
+
+/* 画像部分 */
+.radio .icon {
+    width: 1em;
+    height: 1em;
+    background-image: url("../../assets/img/pc/radio-not-selected.webp");
+    background-size: cover;
+    transition: filter 0.2s ease;
+}
+
+/* チェック時に画像を切り替える */
+.radio input:checked + .icon {
+    background-image: url("../../assets/img/pc/radio-selected.webp");
+}
+
+/* フォーカス時に金色の光を出す */
+.radio input:focus + .icon {
+    filter: drop-shadow(0 0 6px #efc053);
+}
