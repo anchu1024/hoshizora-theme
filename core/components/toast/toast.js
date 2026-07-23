@@ -1,83 +1,117 @@
 const toast = {
     stack: [],
-
-    info(ctx) {
-        return this.create(ctx, "info");
+    defaults: {
+        variant: "info",
+        className: "",
+        attrs: {},
+        duration: 4000,
+        pauseOnHover: true,
     },
 
-    warn(ctx) {
-        return this.create(ctx, "warn");
+    info(content, options = {}) {
+        return this.create(content, { ...options, variant: "info" });
     },
 
-    error(ctx) {
-        return this.create(ctx, "danger");
+    warn(content, options = {}) {
+        return this.create(content, { ...options, variant: "warn" });
     },
 
-    success(ctx) {
-        return this.create(ctx, "success");
+    error(content, options = {}) {
+        return this.create(content, { ...options, variant: "danger" });
     },
 
-    create(ctx, cls) {
-        const html = `
-        <div class="toast ${cls}">
-            <div class="content">${ctx}</div>
-            <span class="border-top"></span>
-            <span class="border-left"></span>
-            <span class="border-bottom"></span>
-            <span class="border-right"></span>
-        </div>
-        `;
+    success(content, options = {}) {
+        return this.create(content, { ...options, variant: "success" });
+    },
 
-        const tmp = document.createElement("template");
-        tmp.innerHTML = html.trim();
-        const el = tmp.content.firstElementChild;
+    create(content, options = {}) {
+        const config = { ...this.defaults, ...options };
+        const el = document.createElement("div");
+        const classNames = ["toast", config.variant];
+
+        if (config.className) {
+            classNames.push(config.className);
+        }
+
+        el.className = classNames.join(" ");
+
+        Object.entries(config.attrs || {}).forEach(([name, value]) => {
+            if (value === false || value == null) return;
+            el.setAttribute(name, value === true ? "" : String(value));
+        });
+
+        const body = document.createElement("div");
+        body.className = "content";
+
+        if (content instanceof Node) {
+            body.appendChild(content);
+        } else {
+            body.textContent = String(content ?? "");
+        }
+
+        el.appendChild(body);
+        this.appendDecorations(el);
 
         document.body.appendChild(el);
-
         this.stack.unshift(el);
-
         this.updatePositions();
 
         el.offsetHeight;
-
         el.style.left = "10px";
         el.style.opacity = 1;
 
-        let timer = setTimeout(() => {
+        let timer = window.setTimeout(() => {
             this.remove(el);
-        }, 4000);
+        }, config.duration);
 
-        el.addEventListener("mouseenter", () => {
-            clearTimeout(timer);
-        });
+        if (config.pauseOnHover) {
+            el.addEventListener("mouseenter", () => {
+                window.clearTimeout(timer);
+            });
 
-        el.addEventListener("mouseleave", () => {
-            timer = setTimeout(() => {
-                this.remove(el);
-            }, 2000);
-        });
+            el.addEventListener("mouseleave", () => {
+                timer = window.setTimeout(() => {
+                    this.remove(el);
+                }, 2000);
+            });
+        }
 
         if (this.stack.length > 5) {
             this.remove(this.stack[this.stack.length - 1]);
         }
+
         return el;
+    },
+
+    appendDecorations(el) {
+        ["top", "left", "bottom", "right"].forEach((position) => {
+            const span = document.createElement("span");
+            span.className = `border-${position}`;
+            el.appendChild(span);
+        });
     },
 
     updatePositions() {
         let bottom = 20;
         this.stack.forEach((el) => {
-            el.style.bottom = bottom + "px";
+            el.style.bottom = `${bottom}px`;
             bottom += el.offsetHeight + 20;
         });
     },
 
     remove(el) {
         const idx = this.stack.indexOf(el);
-        if (idx != -1) this.stack.splice(idx, 1);
+        if (idx !== -1) {
+            this.stack.splice(idx, 1);
+        }
+
         el.style.left = "-100px";
         el.style.opacity = 0;
-        setTimeout(() => {
+        window.setTimeout(() => {
             el.remove();
         }, 200);
     },
 };
+
+window.hoshizora = window.hoshizora || {};
+window.hoshizora.toast = toast;

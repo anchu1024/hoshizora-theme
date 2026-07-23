@@ -63,7 +63,7 @@ function drawStars(scrollY = 0) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    canvas = document.querySelector("#ui-hero-canvas");
+    canvas = document.querySelector(".ui-hero-canvas");
     ctx = canvas.getContext("2d");
 
     canvas.width = canvas.offsetWidth;

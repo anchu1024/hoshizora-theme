@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 
-#ui-hero-canvas {
+.ui-hero-canvas {
     position: absolute;
     inset: 0;
     width: 100%;
